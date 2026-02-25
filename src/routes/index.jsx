@@ -1,5 +1,5 @@
 // imports ------------------------------------------------------------------------------
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import App from "../App";
 import HomePage from "../pages/homepage/HomePage.jsx";
 import CategoryPage from "../pages/categorypage/CategoryPage.jsx";
@@ -8,7 +8,7 @@ import SearchPage from "../pages/searchpage/SearchPage.jsx";
 
 // --------------------------------------------------------------------------------------
 
-const router = createBrowserRouter([
+const router = createHashRouter([
 	{
 		path: "/",
 		element: <App />,
